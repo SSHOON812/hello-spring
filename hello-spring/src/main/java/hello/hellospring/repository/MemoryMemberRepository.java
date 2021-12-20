@@ -4,7 +4,8 @@ import hello.hellospring.domain.Member;
 
 import java.util.*;
 
-public class MemoryMemberRepository implements memberRepository {
+
+public class MemoryMemberRepository implements MemberRepository {
 
     private  static Map<Long,Member> store = new HashMap<>();
     private static long sequance = 0L;

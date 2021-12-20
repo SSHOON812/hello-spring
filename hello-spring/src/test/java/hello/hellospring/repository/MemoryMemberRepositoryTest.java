@@ -14,11 +14,14 @@ public class MemoryMemberRepositoryTest {
 
     MemoryMemberRepository repository = new MemoryMemberRepository();
 
+    //테스트가 많으면 자동으로 돌려주는 방법이 있음
+    //테스트 코드 관련 공부 할것.
+
     // 테스트 코드를 짤때는 순서에 상관없게 해야됨 의존관계 없이 설계해야됨
     @AfterEach  // 하나의 테스트 케이스가 끝나면 값을 지움 저장소, 공용데이터를 지워야 함
     public void afterEach(){
 
-        repository.clearStore();
+        repository.clearStore(); // 테스트 후 삭제
 
     }
 
